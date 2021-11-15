@@ -1,3 +1,5 @@
+import 'package:sun_flare/domain/models/solar_flare_model.dart';
+
 class SolarFlareDTO {
   final String flrId;
   final DateTime startTime;
@@ -14,4 +16,16 @@ class SolarFlareDTO {
         classType = map['classType'],
         sourceLocation = map['sourceLocation'],
         link = map['link'];
+}
+
+extension SolarFlareMapper on SolarFlareDTO {
+  SolarFlareModel toModel() {
+    return SolarFlareModel(
+      flrId: flrId,
+      startTime: startTime,
+      endTime: endTime,
+      classType: classType,
+      sourceLocation: sourceLocation,
+    );
+  }
 }
