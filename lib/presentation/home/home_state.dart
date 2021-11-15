@@ -15,7 +15,7 @@ abstract class HomeStateBase with Store {
   }
 
   @observable
-  late SolarActivitiesModel solarActivitiesModel;
+  SolarActivitiesModel? solarActivitiesModel;
 
   @observable
   bool isLoading = false;

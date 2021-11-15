@@ -25,9 +25,9 @@ class _HomePageState extends State<HomePage> {
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
                 Text(
-                    'Last Solar Flare Date: ${widget.homeState.solarActivitiesModel.lastFlare.startTime}'),
+                    'Last Solar Flare Date: ${widget.homeState.solarActivitiesModel!.lastFlare.startTime}'),
                 Text(
-                    'Last GeoStorm Date: ${widget.homeState.solarActivitiesModel.lastStorm.startTime}'),
+                    'Last GeoStorm Date: ${widget.homeState.solarActivitiesModel!.lastStorm.startTime}'),
               ],
             );
           },

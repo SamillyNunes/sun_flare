@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sun_flare/presentation/home/home_module.dart';
 import 'package:sun_flare/presentation/home/home_page.dart';
 
 class Application extends StatelessWidget {
@@ -12,7 +13,9 @@ class Application extends StatelessWidget {
         primarySwatch: Colors.orange,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: const HomePage(),
+      home: HomePage(
+        homeState: HomeModule.homeState(),
+      ),
     );
   }
 }

@@ -13,13 +13,13 @@ mixin _$HomeState on HomeStateBase, Store {
       Atom(name: 'HomeStateBase.solarActivitiesModel');
 
   @override
-  SolarActivitiesModel get solarActivitiesModel {
+  SolarActivitiesModel? get solarActivitiesModel {
     _$solarActivitiesModelAtom.reportRead();
     return super.solarActivitiesModel;
   }
 
   @override
-  set solarActivitiesModel(SolarActivitiesModel value) {
+  set solarActivitiesModel(SolarActivitiesModel? value) {
     _$solarActivitiesModelAtom.reportWrite(value, super.solarActivitiesModel,
         () {
       super.solarActivitiesModel = value;

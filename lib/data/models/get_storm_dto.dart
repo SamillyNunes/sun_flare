@@ -6,8 +6,8 @@ class GeoStormDTO {
   final String link;
 
   GeoStormDTO.fromApi(Map<String, dynamic> map)
-      : gstId = map['gstId'],
-        startTime = map['startTime'],
+      : gstId = map['gstID'],
+        startTime = DateTime.parse(map['startTime']),
         link = map['link'];
 }
 
